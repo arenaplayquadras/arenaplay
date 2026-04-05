@@ -18,6 +18,7 @@ import {
   Alert,
 } from 'react-native';
 import Colors from '../theme/colors';
+import { s, fs } from '../theme/responsive';
 
 export default function LoginScreen({ navigation }) {
   // Estados dos campos de entrada
@@ -114,65 +115,64 @@ const styles = StyleSheet.create({
   scrollContent: {
     flexGrow: 1,
     justifyContent: 'center',
-    paddingHorizontal: 32,
-    paddingVertical: 40,
+    paddingHorizontal: s(28),
+    paddingVertical: s(32),
   },
 
   // Logo
   logoContainer: {
     alignItems: 'center',
-    marginBottom: 24,
+    marginBottom: s(20),
   },
   logo: {
-    width: 180,
-    height: 180,
-    borderRadius: 20,
+    width: s(150),
+    height: s(150),
+    borderRadius: s(18),
   },
 
   // Textos de boas-vindas
   titulo: {
-    fontSize: 28,
+    fontSize: fs(24),
     fontWeight: 'bold',
     color: Colors.primary,
     textAlign: 'center',
-    marginBottom: 4,
+    marginBottom: s(3),
   },
   subtitulo: {
-    fontSize: 15,
+    fontSize: fs(13),
     color: Colors.textMedium,
     textAlign: 'center',
-    marginBottom: 32,
+    marginBottom: s(26),
   },
 
   // Inputs
   inputContainer: {
-    marginBottom: 18,
+    marginBottom: s(14),
   },
   label: {
-    fontSize: 14,
+    fontSize: fs(12),
     fontWeight: '600',
     color: Colors.textDark,
-    marginBottom: 6,
+    marginBottom: s(5),
   },
   input: {
     backgroundColor: Colors.white,
     borderWidth: 1,
     borderColor: Colors.card,
-    borderRadius: 12,
-    paddingHorizontal: 16,
-    paddingVertical: 14,
-    fontSize: 16,
+    borderRadius: s(10),
+    paddingHorizontal: s(14),
+    paddingVertical: s(12),
+    fontSize: fs(14),
     color: Colors.textDark,
   },
 
   // Botão principal
   botaoEntrar: {
     backgroundColor: Colors.primary,
-    paddingVertical: 16,
-    borderRadius: 12,
+    paddingVertical: s(14),
+    borderRadius: s(10),
     alignItems: 'center',
-    marginTop: 8,
-    // Sombra sutil
+    marginTop: s(6),
     shadowColor: Colors.primary,
     shadowOffset: { width: 0, height: 4 },
     shadowOpacity: 0.3,
@@ -181,26 +181,26 @@ const styles = StyleSheet.create({
   },
   botaoEntrarTexto: {
     color: Colors.white,
-    fontSize: 18,
+    fontSize: fs(15),
     fontWeight: 'bold',
   },
 
   // Link decorativo
   linkEsqueceu: {
     alignItems: 'center',
-    marginTop: 16,
+    marginTop: s(14),
   },
   linkTexto: {
     color: Colors.secondary,
-    fontSize: 14,
+    fontSize: fs(12),
   },
 
   // Rodapé
   rodape: {
     textAlign: 'center',
     color: Colors.textLight,
-    fontSize: 12,
-    marginTop: 40,
+    fontSize: fs(10),
+    marginTop: s(32),
     letterSpacing: 1,
   },
 });
