@@ -92,11 +92,6 @@ export default function LoginScreen({ navigation }) {
           <Text style={styles.botaoEntrarTexto}>Entrar</Text>
         </TouchableOpacity>
 
-        {/* ---- Link de recuperação (decorativo) ---- */}
-        <TouchableOpacity style={styles.linkEsqueceu}>
-          <Text style={styles.linkTexto}>Esqueceu sua senha?</Text>
-        </TouchableOpacity>
-
         {/* ---- Rodapé ---- */}
         <Text style={styles.rodape}>
           Esportes de Areia & Lazer
